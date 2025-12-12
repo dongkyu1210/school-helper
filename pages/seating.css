@@ -1,0 +1,79 @@
+/* seating.css */
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+#student-list {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.setting-controls {
+    display: flex;
+    gap: 10px;
+}
+
+#input-cols {
+    padding: 10px;
+    font-size: 1em;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #5d9cec;
+    border-radius: 5px;
+}
+
+#arrange-button {
+    padding: 10px 25px;
+    font-size: 1.1em;
+    background-color: #5d9cec; /* 파란색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#arrange-button:hover {
+    background-color: #4a7bbd;
+}
+
+#seating-chart {
+    display: grid;
+    /* 자바스크립트에서 grid-template-columns를 동적으로 설정할 것입니다. */
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.desk-card {
+    background-color: #ecf0f1; /* 밝은 회색 */
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: keep-all; /* 이름이 길 경우 깨짐 방지 */
+}
+
+/* 짝꿍이나 앞뒤 관계를 나타낼 수 있도록 특별히 강조할 자리도 추가할 수 있습니다. */
+.desk-card:nth-child(even) {
+    background-color: #dbe4f1;
+}
