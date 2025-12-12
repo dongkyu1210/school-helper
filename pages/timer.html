@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 - 수업 도구</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="timer.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html" style="color: white; text-decoration: none;">나만의 수업 도구</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="timer.html">타이머</a></li>
+                    <li><a href="seating.html">자리배치</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>⏰ 수업 타이머</h2>
+        
+        <div id="timer-display">00:00:00</div>
+        
+        <div class="controls">
+            <input type="number" id="input-minutes" placeholder="분" value="10" min="0">
+            <button id="start-button">시작</button>
+            <button id="pause-button" disabled>일시정지</button>
+            <button id="reset-button">초기화</button>
+        </div>
+    </main>
+    
+    <script src="timer.js"></script>
+</body>
+</html>
