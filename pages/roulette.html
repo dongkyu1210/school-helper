@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돌림판 - 수업 도구</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="roulette.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html" style="color: white; text-decoration: none;">나만의 수업 도구</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="timer.html">타이머</a></li>
+                    <li><a href="seating.html">자리배치</a></li>
+                    <li><a href="roulette.html">돌림판</a></li>
+                    <li><a href="dB.html">소음측정기</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>🎯 돌림판</h2>
+        
+        <div class="roulette-container">
+            <div class="input-area">
+                <textarea id="roulette-items" placeholder="항목을 한 줄에 하나씩 입력하세요. (예: 1번, 2번, 김철수, 발표...)"></textarea>
+                <button id="spin-button">돌리기 시작!</button>
+            </div>
+
+            <div class="wheel-area">
+                <div id="roulette-wheel">
+                    </div>
+                <div id="roulette-pointer"></div>
+            </div>
+
+            <div id="result-display">돌림판을 돌려주세요!</div>
+        </div>
+    </main>
+    
+    <script src="roulette.js"></script>
+</body>
+</html>
