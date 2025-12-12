@@ -1,0 +1,72 @@
+/* timer.css */
+/* 기본 컨테이너 스타일은 '../style.css'에서 가져옴 */
+
+#timer-display {
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+    color: #34495e; /* 진한 파랑/회색 */
+    transition: color 0.5s;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.controls input[type="number"] {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s;
+}
+
+#start-button {
+    background-color: #2ecc71; /* 녹색 */
+    color: white;
+}
+#start-button:hover {
+    background-color: #27ae60;
+}
+
+#pause-button {
+    background-color: #f39c12; /* 노란색 */
+    color: white;
+}
+#pause-button:hover {
+    background-color: #e67e22;
+}
+
+#reset-button {
+    background-color: #e74c3c; /* 빨간색 */
+    color: white;
+}
+#reset-button:hover {
+    background-color: #c0392b;
+}
+
+/* 타이머 종료 시 스타일 */
+.finished {
+    color: #e74c3c !important; /* 빨간색으로 변경 */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
