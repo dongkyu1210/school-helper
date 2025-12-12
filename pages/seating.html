@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리배치 - 수업 도구</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="seating.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html" style="color: white; text-decoration: none;">나만의 수업 도구</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">홈</a></li>
+                    <li><a href="timer.html">타이머</a></li>
+                    <li><a href="seating.html">자리배치</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>🪑 자리 배치</h2>
+        
+        <div class="input-section">
+            <textarea id="student-list" placeholder="학생 이름을 한 줄에 한 명씩 입력하세요. (예: 김철수, 이영희, 박민수...)"></textarea>
+            <div class="setting-controls">
+                <input type="number" id="input-cols" value="4" min="1" placeholder="열 개수">
+                <button id="arrange-button">자리 배치 시작</button>
+            </div>
+        </div>
+
+        <div id="seating-chart">
+            </div>
+
+    </main>
+    
+    <script src="seating.js"></script>
+</body>
+</html>
